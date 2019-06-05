@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.TestNG.pckg.TestNGBasics">
+        <methods>
+          <include name="beforeSuiteMethod"/>
+          <include name="launchBrowser"/>
+          <include name="test2"/>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="quitBrowser"/>
+          <include name="enterURL"/>
+        </methods>
+      </class> <!-- com.TestNG.pckg.TestNGBasics -->
+      <class name="com.TestNG.pckg.ExceptionTimeOutTest">
+        <methods>
+          <include name="infiniteLoopTest"/>
+        </methods>
+      </class> <!-- com.TestNG.pckg.ExceptionTimeOutTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
